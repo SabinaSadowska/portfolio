@@ -8,7 +8,7 @@
       href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css"
     />
     <link href="css/media.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/gif" href="img/logo/favicon.png" />
+    <link rel="icon" type="image/gif" href="/img/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap&subset=latin-ext"
       rel="stylesheet"
@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>S.Web</title>
+    <title>Sabina Sadowska</title>
   </head>
   <body>
     <header class="header-my">
@@ -30,7 +30,7 @@
         <div class="nav-wrapper-my">
           <a href="#back_to_header"
             ><img
-              src="img/logo/logo_transparent.png"
+              src="/img/logo_transparent.png"
               alt="Portfolio logo"
               class="logo-my"
           /></a>
@@ -58,37 +58,55 @@
       </div>
     </header>
 
-    <section id="meSection">
-      <div class="container container-fluid aboutMe_wrap">
-        <h2 class="col title">O mnie</h2>
-        <div class="container">
-          <div class="rowMy row">
-            <div class="col-md-3">
-              <img id="me" src="./img/me3.jpg" alt="Moje zdjęcie" />
-            </div>
-            <p class="col-md-8 simpleText simpleText-white">
-              Nazywam się Sabina i jestem początkującą programistką Front End.
-              Lubię pracować w Reakcie. Obecnie szukam pracy jako Junior Front
-              End Developer. Skontaktuj się ze mną aby podjąć współpracę lub
-              porozmawiać o projektach.
-            </p>
+    <section id="projects">
+      <h2 class="col title">Projekty</h2>
+      <div class="container container-fluid projects-wrap">
+        <div class="row rowMy">
+          <div class="col-md-6">
+            <img class="mockup" src="img/smartmockups_k3r8htva.png" />
           </div>
-          <div class="socialMediaWrapper row">
+          <div class="socialMediaWrapper col-md-6 simpleText text-background">
+            <p>
+              Tripcity App jest efektem pracy 4-osobowego zespołu. Moim zadaniem
+              było stworzenie wyszukiwarki oraz podłączenie sekcji ulubionych do
+              Firebase, tak, żeby ulubione atrakcje uzytkownika były wyświetlane
+              tylko po zalogowaniu. Technologie: React, JavaScript, HTML, CSS,
+              Firebase, Semantic UI React, Styled Components, React Router.
+            </p>
             <a
-              href="https://www.linkedin.com/in/sabina-sadowska-04919b28/"
+              class="projecsts_icon--github"
+              href="https://github.com/sabinkie"
               target="_blank"
-              ><i class="icons ion-logo-linkedin"></i
-            ></a>
-            <a href="https://github.com/sabinkie" target="_blank"
-              ><i class="icons ion-logo-github"></i
+              ><i class="icons ion-logo-github projecsts_icon--github"></i
             ></a>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="projects">
-      <h2 class="col title">Projekty</h2>
+      <div class="container container-fluid projects-wrap">
+        <div class="row rowMy">
+          <div class="col-md-6">
+            <img class="mockup" src="/img/smartmockups_kafghphv.png" />
+          </div>
+          <div class="socialMediaWrapper col-md-6 simpleText text-background">
+            <p>
+              Tripcity landing page jest projektem wykonanym w 4-osobowym
+              zespole. Moim zadaniem było stworzenie sekcji "O nas" wraz z
+              animacjami CSS oraz sekcji "Zapisz się", w której to uzytkownik po
+              zostawieniu adresu email bedzie mógł zagrać w grę niespodziankę.
+              Moje zadania w grze: unimożliwienie bohaterowi przechodzenia przez
+              granice planszy, wyświetlanie zdobytych punktów oraz wiadomości
+              wyświetlane po zakończeniu rundy. Technologie: CSS, Javascritp,
+              HTML
+            </p>
+            <a
+              class="projecsts_icon--github"
+              href="https://github.com/sabinkie"
+              target="_blank"
+              ><i class="icons ion-logo-github projecsts_icon--github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
       <div class="container container-fluid projects-wrap">
         <div class="row rowMy">
           <div class="col-md-6">
@@ -96,9 +114,30 @@
           </div>
           <div class="socialMediaWrapper col-md-6 simpleText text-background">
             <p>
-              Trips to przykładowa biznesowa strona wizytówka. Została ona
-              wykonana i zaprojektowana całkowicie przeze mnie w technologiach:
-              HTML, CSS, JS, Bootstrap. Projekt jest stale rozwijany.
+              Trips to przykładowa biznesowa strona wizytówka. Technologie:
+              HTML, CSS, JS, Bootstrap. Projekt jest stopniowo rozwijany.
+            </p>
+            <a
+              class="projecsts_icon--github"
+              href="https://github.com/sabinkie"
+              target="_blank"
+              ><i class="icons ion-logo-github projecsts_icon--github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="container container-fluid projects-wrap">
+        <div class="row rowMy">
+          <div class="col-md-6">
+            <img class="mockup" src="img/smartmockups_k3r8htva.png" />
+          </div>
+          <div class="socialMediaWrapper col-md-6 simpleText text-background">
+            <p>
+              Projekt MusicApp jest efektem pracy 3-osobowego zespołu. Moim
+              zadaniem było stworzenie nawigacji oraz sekcji wyświetlania
+              wyników wyszukiwania wraz z ostwarzaczem (kod JavaScript i aspekt
+              wizualny). Technologie: JavaScript, HTML, SCSS, GIT, GULP,
+              zewnętrzne API.
             </p>
             <a
               class="projecsts_icon--github"
@@ -114,37 +153,18 @@
           <div class="col-md-6">
             <img class="mockup" src="img/smartmockups_k2dg145r.png" />
           </div>
-          <div class="col-md-6">
-            <p class="simpleText text-background">
-              S.web to moje techniczne portfolio. Zostało ono przeze mnnie
-              całkowicie zaprojektowane i zakodowne w html, css i bootstrapie,
-              jako projekt CodersCamp.
+          <div class="socialMediaWrapper col-md-6 simpleText text-background">
+            <p>
+              S.web to moje techniczne portfolio. Technologie: JavaScript, CSS,
+              HTML, Bootstrap
             </p>
+            <a
+              class="projecsts_icon--github"
+              href="https://github.com/sabinkie"
+              target="_blank"
+              ><i class="icons ion-logo-github projecsts_icon--github"></i
+            ></a>
           </div>
-        </div>
-        <div class="socialMediaWrapper">
-          <a href="https://github.com/sabinkie" target="_blank"
-            ><i class="icons ion-logo-github"></i
-          ></a>
-        </div>
-      </div>
-      <div class="container container-fluid projects-wrap">
-        <div class="row rowMy">
-          <div class="col-md-6">
-            <img class="mockup" src="img/smartmockups_k3r8htva.png" />
-          </div>
-          <p class="col-md-6 simpleText text-background">
-            Projekt MusicApp powstał w ramach CodersCamp jako efekt pracy
-            3-osobowego teamu. Moim zadaniem było stworzenie nawigacji oraz
-            sekcji wyświetlania wyników wyszukiwania wraz z ostwarzaczem (kod js
-            i aspekt wizualny). Technologie: JavaScript, HTML, SCSS, GIT, GULP,
-            zewnętrzne API.
-          </p>
-        </div>
-        <div class="socialMediaWrapper">
-          <a href="https://github.com/sabinkie" target="_blank"
-            ><i class="icons ion-logo-github"></i
-          ></a>
         </div>
       </div>
     </section>
@@ -152,8 +172,7 @@
       <h2 class="title col">Technologie</h2>
       <div class="col p-wrap row">
         <p class="simpleText simpleText-white simpleText-tech">
-          Kolekcja technologi, wktórych pracuję stale się powiększa. Obecnie
-          uczę się Reacta i Javascriptu. W przyszłości: Node.js
+          Mój stack technologiczny:
         </p>
       </div>
       <div class="col container-fluid technologies-wrap row">
@@ -164,6 +183,34 @@
         <i class="fab fa-js"></i>
         <i class="fab fa-react"></i>
         <i class="fab fa-node"></i>
+      </div>
+    </section>
+    <section id="meSection">
+      <div class="container container-fluid aboutMe_wrap">
+        <h2 class="col title">O mnie</h2>
+        <div class="container">
+          <div class="rowMy row">
+            <div class="col-md-3">
+              <img id="me" src="./img/me3.jpg" alt="Moje zdjęcie" />
+            </div>
+            <p class="col-md-8 simpleText simpleText-white">
+              Nazywam się Sabina Sadowska i jestem początkującą programistką
+              Front End. Lubię pracować w Reakcie. Obecnie szukam pracy jako
+              Junior Front End Developer. Skontaktuj się ze mną aby podjąć
+              współpracę lub porozmawiać o projektach.
+            </p>
+          </div>
+          <div class="socialMediaWrapper row">
+            <a
+              href="https://www.linkedin.com/in/sabina-sadowska-04919b28/"
+              target="_blank"
+              ><i class="icons ion-logo-linkedin"></i
+            ></a>
+            <a href="https://github.com/sabinkie" target="_blank"
+              ><i class="icons ion-logo-github"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </section>
     <section id="contact-form">
