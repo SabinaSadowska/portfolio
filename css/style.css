@@ -29,7 +29,7 @@ html {
   background-image: linear-gradient(
       to bottom,
       rgba(85, 123, 226, 0),
-      rgba(255, 255, 255, 0.171)
+      rgba(124, 124, 122, 0)
     ),
     url("../img/georgie-cobbs-muOHbrFGEQY-unsplash2.jpg");
   /* background-image: url("../img/georgie-cobbs-muOHbrFGEQY-unsplash2.jpg"); */
@@ -43,15 +43,16 @@ html {
 }
 
 .test {
-  animation: test 0.1s linear infinite alternate both;
+  animation: test linear infinite alternate both;
+  animation-duration: 0.5s;
 }
 
 @keyframes test {
   0% {
-    background: rgba(116, 119, 119, 0.32);
+    background: rgba(37, 148, 181, 0.81);
   }
   100% {
-    background: rgba(37, 148, 181, 0.81);
+    background: rgb(116, 119, 119);
   }
 }
 
@@ -62,9 +63,10 @@ section {
 /*---logo---*/
 
 .logo-my {
-  width: 200px;
+  width: 100px;
   z-index: 1000000;
   margin-top: 5%;
+  margin-left: 20%;
 }
 
 .header_wrap {
@@ -100,11 +102,8 @@ nav {
   justify-content: space-between;
   position: fixed;
   z-index: 999;
-  background-image: linear-gradient(
-    to right,
-    rgb(248, 248, 248),
-    rgb(208, 208, 208)
-  );
+  background-image: linear-gradient(to right, rgb(248, 248, 248), white);
+  border-bottom: 0.5px solid #fcd444;
 }
 
 .menu-my {
@@ -115,8 +114,10 @@ nav {
   list-style: none;
   margin-left: 20px;
   margin-right: 40px;
-  margin-top: 30px;
+  margin-top: 3%;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
 }
 
 li:last-child {
@@ -125,11 +126,12 @@ li:last-child {
 
 .menu-my a {
   text-decoration: none;
-  color: #2e2e2e;
-  font-size: 80%;
+  color: rgba(150, 150, 150);
+  font-size: 90%;
   white-space: nowrap;
   transition: 0.5s;
   transition-delay: 0.3s;
+  font-weight: 500;
 }
 
 .menu-my a:hover {
@@ -146,13 +148,14 @@ li:last-child {
 
 .btn__white {
   color: aliceblue;
-  background-color: rgba(150, 150, 150, 0.44);
+  background-color: rgba(150, 150, 150);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 23px;
   letter-spacing: 2px;
   white-space: nowrap;
   padding-left: 5%;
   padding-right: 5%;
+  padding: 5%;
 }
 
 .btn__white:hover {
@@ -166,6 +169,7 @@ li:last-child {
 
 #test2 {
   animation: test2 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  color: #474746;
 }
 
 @keyframes test2 {
