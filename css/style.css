@@ -28,10 +28,10 @@ html {
 .header-my {
   background-image: linear-gradient(
       to bottom,
-      rgba(85, 123, 226, 0),
-      rgba(124, 124, 122, 0)
+      rgba(17, 23, 41, 0.041),
+      rgba(17, 23, 41, 0.74)
     ),
-    url("../img/georgie-cobbs-muOHbrFGEQY-unsplash2.jpg");
+    url("../img/georgie-cobbs-muOHbrFGEQY-unsplash2\ \(copy\).jpg");
   /* background-image: url("../img/georgie-cobbs-muOHbrFGEQY-unsplash2.jpg"); */
 
   background-position: top;
@@ -52,7 +52,7 @@ html {
     background: rgba(37, 148, 181, 0.81);
   }
   100% {
-    background: rgb(116, 119, 119);
+    background: transparent;
   }
 }
 
@@ -82,8 +82,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 15%;
-  align-self: flex-start;
+  width: 35%;
+  align-self: center;
   margin-left: 2rem;
 }
 
@@ -102,7 +102,7 @@ nav {
   justify-content: space-between;
   position: fixed;
   z-index: 999;
-  background-image: linear-gradient(to right, rgb(248, 248, 248), white);
+  background-color: white;
   border-bottom: 0.5px solid #fcd444;
 }
 
@@ -148,7 +148,6 @@ li:last-child {
 
 .btn__white {
   color: aliceblue;
-  background-color: rgba(150, 150, 150);
   font-weight: 400;
   font-size: 23px;
   letter-spacing: 2px;
@@ -156,6 +155,7 @@ li:last-child {
   padding-left: 5%;
   padding-right: 5%;
   padding: 5%;
+  width: 95%;
 }
 
 .btn__white:hover {
@@ -169,7 +169,10 @@ li:last-child {
 
 #test2 {
   animation: test2 1.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  color: #474746;
+  align-self: center;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 1%;
 }
 
 @keyframes test2 {
@@ -268,18 +271,30 @@ li:last-child {
   margin-bottom: 5%;
 }
 
+.icon_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .icons {
-  font-size: 200%;
+  font-size: 1.5rem;
   margin: 20px 30px;
   color: #2e2e2e;
   align-self: flex-end;
 }
 
-.projecsts_icon--github {
+.projecsts_icon--github,
+.projects_icon--website {
   align-self: flex-end;
 }
 
-.ion-logo-github:hover {
+.projects_icon--website {
+  margin: 0;
+}
+
+.ion-logo-github:hover,
+.projects_icon--website:hover {
   color: #000000;
 }
 
@@ -290,9 +305,9 @@ li:last-child {
 /*PROJECTS*/
 
 #projects {
-  background-image: url("../img/dot-grid.png");
-  background-position: center;
+  background-color: white;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .mockup {
