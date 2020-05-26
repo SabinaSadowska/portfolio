@@ -87,6 +87,12 @@ section {
   margin-left: 2rem;
 }
 
+.header_text-info {
+  color: whitesmoke;
+  text-align: center;
+  margin: 3%;
+}
+
 /*---nav---*/
 
 nav {
