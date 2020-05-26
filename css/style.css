@@ -327,7 +327,13 @@ li:last-child {
   font-size: 400%;
   display: flex;
   letter-spacing: 40px;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.technologies_img {
+  width: 150px;
+  height: auto;
 }
 
 .simpleText-tech {
