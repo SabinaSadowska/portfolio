@@ -49,10 +49,10 @@ html {
 
 @keyframes test {
   0% {
-    background: rgba(37, 148, 181, 0.81);
+    background: transparent;
   }
   100% {
-    background: transparent;
+    background: rgba(74, 122, 136, 0.81);
   }
 }
 
@@ -161,7 +161,7 @@ li:last-child {
 .btn__white:hover {
   color: rgb(255, 255, 255);
   animation-name: test;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-direction: alternate;
