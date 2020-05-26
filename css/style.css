@@ -52,7 +52,7 @@ html {
     background: transparent;
   }
   100% {
-    background: rgba(74, 122, 136, 0.81);
+    background: rgba(37, 147, 181, 0.295);
   }
 }
 
@@ -141,7 +141,7 @@ li:last-child {
 }
 
 .menu-my a:hover {
-  color: rgba(52, 107, 181, 0.83);
+  color: rgba(37, 148, 181, 0.81);
 }
 
 .btn {
@@ -286,7 +286,7 @@ li:last-child {
 .icons {
   font-size: 1.5rem;
   margin: 20px 30px;
-  color: #2e2e2e;
+  color: #585656;
   align-self: flex-end;
 }
 
@@ -309,6 +309,10 @@ li:last-child {
 }
 
 /*PROJECTS*/
+
+.projects-wrap {
+  padding-bottom: 50px;
+}
 
 #projects {
   background-color: white;
