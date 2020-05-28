@@ -32,9 +32,8 @@ html {
       rgba(17, 23, 41, 0.74)
     ),
     url("../img/georgie-cobbs-muOHbrFGEQY-unsplash2\ \(copy\).jpg");
-  /* background-image: url("../img/georgie-cobbs-muOHbrFGEQY-unsplash2.jpg"); */
 
-  background-position: top;
+  background-position: botto;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -340,12 +339,15 @@ nav {
   width: 3rem;
   height: 3rem;
   margin: 1rem;
+  cursor: url("../img/pngwing2.com.png"), pointer;
 }
 
 .technologies_icons {
   width: 3.2rem;
   height: 3.2rem;
   margin: 1rem;
+  cursor: help;
+  cursor: url("../img/pngwing2.com.png"), pointer;
 }
 
 .simpleText-tech {
