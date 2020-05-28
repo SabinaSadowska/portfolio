@@ -315,18 +315,25 @@ nav {
 }
 
 .text-background {
-  background-color: rgba(229, 229, 229, 0.97);
+  background-color: rgba(229, 229, 229, 0.466);
   border-style: none;
   border-radius: 20px;
 }
 
 /*technologies*/
 
+#technologies {
+  background-color: rgba(229, 229, 229, 0.466);
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
 .technologies-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 15% 2rem 15%;
+  padding: 0 15% 5rem 15%;
 }
 
 .technologies_img {
@@ -402,4 +409,28 @@ textarea {
 #btn-wrap {
   display: flex;
   justify-content: center;
+}
+
+/* footer */
+
+.footer {
+  background-color: #fcd444;
+  height: 80px;
+}
+
+.footer_info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  font-weight: 400;
+}
+
+.footer_rights,
+.footer_icons-info {
+  font-size: 0.8rem;
+  color: rgb(46, 46, 46);
+  text-decoration: none;
 }
