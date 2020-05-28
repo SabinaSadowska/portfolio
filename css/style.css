@@ -323,17 +323,22 @@ nav {
 /*technologies*/
 
 .technologies-wrap {
-  text-align: center;
-  font-size: 400%;
   display: flex;
-  letter-spacing: 40px;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15% 2rem 15%;
 }
 
 .technologies_img {
-  width: 150px;
-  height: auto;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+}
+
+.technologies_icons {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin: 1rem;
 }
 
 .simpleText-tech {
