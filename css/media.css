@@ -2,7 +2,7 @@
 
 @media (max-width: 360px) {
   header {
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     margin-left: 0;
     padding-left: 0;
@@ -10,7 +10,7 @@
   }
 
   .header_name {
-    font-size: 170%;
+    font-size: 70%;
     letter-spacing: 2px;
     color: #e1f6f4;
     margin-left: 10%;

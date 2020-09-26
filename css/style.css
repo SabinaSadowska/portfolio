@@ -1,10 +1,3 @@
-/*
-
-#2e2e2e - default font color;
-rgba(52, 107, 181, 0.83) - hoover, styling 
-
-*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,17 +16,19 @@ html {
   background-color: #ecefef;
 }
 
-/*HEADER*/
 
 .header-my {
+  left: 0;
+  top: 0;
+  width: 100%;
   background-image: linear-gradient(
-      to bottom,
-      rgba(17, 23, 41, 0.041),
-      rgba(17, 23, 41, 0.74)
-    ),
-    url("../img/georgie-cobbs-muOHbrFGEQY-unsplash2\ \(copy\).jpg");
-
-  background-position: botto;
+    to bottom,
+    rgba(50, 54, 66, 0.041),
+    rgba(13, 17, 31, 0.74)
+  ), url("../img/artem-sapegin-b18TRXc8UPQ-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  /* position: fixed;  */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +46,7 @@ html {
     background: transparent;
   }
   100% {
-    background: rgba(37, 147, 181, 0.295);
+    background: rgba(198, 216, 236, 0.767);
   }
 }
 
@@ -73,22 +68,28 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 131%;
+  height: 100%;
   flex-direction: column;
 }
 
 #header_wrap--text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   width: fit-content;
-  align-self: center;
+  height: 100vh;
+  justify-content: center;
 }
 
+
 .header_text-info {
-  color: white;
+  color: #fcd444;
   text-align: center;
   margin: 4%;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
 }
 
 /*---nav---*/
@@ -108,6 +109,7 @@ nav {
   z-index: 999;
   background-color: white;
   border-bottom: 0.5px solid #fcd444;
+  justify-content: flex-end;
 }
 
 .menu-my {
@@ -133,8 +135,7 @@ nav {
 }
 
 .menu-my a:hover {
-  color: rgba(37, 148, 181, 0.81);
-}
+  color: #fcd444}
 
 .btn {
   text-decoration: none;
@@ -147,10 +148,12 @@ nav {
 .btn__white {
   color: aliceblue;
   font-weight: 400;
-  font-size: 23px;
   letter-spacing: 2px;
+  padding: 0.5rem 2rem;
   white-space: nowrap;
-  padding: 5% 15%;
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 1rem;
 }
 
 .btn__white:hover {
@@ -168,6 +171,7 @@ nav {
   color: white;
   font-weight: 500;
   margin-bottom: 1%;
+  font-size: 2rem;
 }
 
 @keyframes test2 {
@@ -257,7 +261,19 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: row;
+/*   border-bottom: 0.3px rgb(195, 196, 199) solid;
+  border-bottom: 1px dashed rgba(28,110,164,0.21);
+  border-radius: 40px; */
+  padding: 2rem 0;
+  box-shadow: 0px 6px 7px -7px rgba(107, 106, 106, 0.37);
+
 }
+
+#lastLine {
+  box-shadow: none;
+
+}
+
 
 .socialMediaWrapper {
   display: flex;
@@ -314,9 +330,12 @@ nav {
 }
 
 .text-background {
-  background-color: rgba(229, 229, 229, 0.466);
+  background-color:  rgba(229, 229, 214, 0.466);
   border-style: none;
   border-radius: 20px;
+box-shadow: 8px 10px 7px -8px rgba(0,0,0,0.37);
+
+
 }
 
 /*technologies*/
@@ -339,7 +358,7 @@ nav {
   width: 3rem;
   height: 3rem;
   margin: 1rem;
-  cursor: url("../img/pngwing2.com.png"), pointer;
+  cursor: pointer;
 }
 
 .technologies_icons {
@@ -347,7 +366,7 @@ nav {
   height: 3.2rem;
   margin: 1rem;
   cursor: help;
-  cursor: url("../img/pngwing2.com.png"), pointer;
+  cursor: pointer;
 }
 
 .simpleText-tech {
