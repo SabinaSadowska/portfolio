@@ -18,22 +18,6 @@ html {
 }
 
 .header-my {
-  /*  left: 0;
-  top: 0;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(50, 54, 66, 0.041),
-      rgba(13, 17, 31, 0.74)
-    ),
-    url("../img/artem-sapegin-b18TRXc8UPQ-unsplash.jpg"); 
-  background-position: center;
-  background-size: cover;
-  position: fixed;  
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  overflow-y: hidden; */
   overflow: hidden;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -164,6 +148,14 @@ nav {
   align-items: center;
 }
 
+.menu-invisible {
+  display: none !important;
+  color: rgba(150, 150, 150);
+  margin-right: 20px;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
 .menu-my a {
   text-decoration: none;
   color: rgba(150, 150, 150);
@@ -172,6 +164,23 @@ nav {
   transition: 0.5s;
   transition-delay: 0.3s;
   font-weight: 500;
+}
+
+.menuMobile {
+  height: 200px;
+}
+
+.menuMobile ul {
+  flex-direction: column !important;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.menuMobile li {
+  display: flex !important;
+  padding: 5px;
 }
 
 .menu-my a:hover {
@@ -239,6 +248,12 @@ nav {
   flex-direction: column;
 }
 
+.rowMy--about {
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 8px 10px 7px -8px rgba(0, 0, 0, 0.37);
+}
+
 #aboutMe {
   font-weight: 300;
   font-size: 220%;
@@ -262,7 +277,7 @@ nav {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.23);
+  background-color: rgba(229, 229, 229, 0.466);
 }
 
 #me {
@@ -282,29 +297,26 @@ nav {
   margin: 30px 0px 50px 0px;
   padding: 4%;
   text-align: justify;
-  border: 1.2px dotted;
   border-color: rgba(52, 87, 181, 0.41);
   height: auto;
   border-radius: 20px;
+  line-height: 1.8;
 }
 
 .simpleText-white {
-  margin: 30px 0px 50px 0px;
-  padding: 4%;
+  margin: 0px 0px 100px 0px;
+  padding: 4% !important;
   text-align: justify;
-  border: dotted 1px;
   height: auto;
-  border-radius: 20px;
-  color: #a2a2a2;
+  color: #4e4e4e;
+  background-color: white;
+  box-shadow: 8px 10px 7px -8px rgba(0, 0, 0, 0.37) !important;
 }
 
 .rowMy {
   display: flex;
   align-items: center;
   flex-direction: row;
-  /*   border-bottom: 0.3px rgb(195, 196, 199) solid;
-  border-bottom: 1px dashed rgba(28,110,164,0.21);
-  border-radius: 40px; */
   padding: 2rem 0;
   box-shadow: 0px 6px 7px -7px rgba(107, 106, 106, 0.37);
 }
@@ -324,6 +336,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 1%;
 }
 
 .icons {
@@ -358,7 +371,7 @@ nav {
 }
 
 #projects {
-  background-color: white;
+  background-color: #fff;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -368,7 +381,7 @@ nav {
 }
 
 .text-background {
-  background-color: rgba(229, 229, 214, 0.466);
+  background-color: rgba(229, 229, 229, 0.466);
   border-style: none;
   border-radius: 20px;
   box-shadow: 8px 10px 7px -8px rgba(0, 0, 0, 0.37);
@@ -377,7 +390,7 @@ nav {
 /*technologies*/
 
 #technologies {
-  background-color: rgba(229, 229, 229, 0.466);
+  background-color: #fff;
   margin: 0;
   padding: 1rem;
   width: 100%;
@@ -493,9 +506,34 @@ textarea {
   text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+  .menu-my li {
+    display: none;
+  }
+  .menu-invisible {
+    display: flex !important;
+  }
+}
+
 @media (max-width: 1024px) and (min-width: 710px) {
   .header-my:before {
     background-size: 200%;
+  }
+  .simpleText {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .rowMy {
+    flex-direction: column;
+  }
+  .mockup {
+    width: 100%;
+  }
+  .imageBig {
+    max-width: 90%;
+  }
+  .socialMediaWrapper {
+    max-width: 90%;
   }
 }
 
@@ -503,5 +541,31 @@ textarea {
   .header-my:before {
     background-size: 350%;
   }
+  .footer_rights,
+  .footer_icons-info {
+    font-size: 0.6rem;
+  }
+  .technologies_icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  .technologies_img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .simpleText {
+    text-align: center;
+    line-height: 1.5;
+    padding: 7%;
+    font-size: 0.8rem;
+  }
+  .simpleText {
+    padding: 7% !important;
+  }
+  .icon_wrapper {
+    justify-content: center;
+  }
+  .mockup {
+    width: 100%;
+  }
 }
-
